@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/media.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>CyberShield DB</title>
+</head>
+
+<body>
+    <section class="main-section" id="home">
+        <header class="header">
+            <div class="logo">
+                <i class="fa-solid fa-database"></i>
+                <h4>Cyber<span class="span-logo">Shield</span> DB</h4>
+            </div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#incidents">Incidentes</a></li>
+            </ul>
+        </header>
+
+        <main class="main">
+            <article class="left-side">
+                <img class="img-main" src="/public/assets/img/hacker-animate (1).svg" alt="">
+            </article>
+            <article class="other-side">
+                <h1 class="title-main">Compartilhe e proteja: nosso banco de dados de incidentes de cibersegurança
+                    conecta você à defesa contra ameaças!</h1>
+                <div class="btn-field">
+                    <button class="btn-title">saiba mais</button>
+                </div>
+            </article>
+        </main>
+    </section>
+    <section class="about-section" id="about">
+        <div class="main">
+            <article class="left-side">
+                <img class="img-main" src="/public/assets/img/shared-goals-animate.svg" alt="">
+            </article>
+            <article class="other-side">
+                <p class="text-about">
+                    Na CyberShield DB, nosso objetivo é criar um ambiente digital mais seguro e colaborativo. Queremos
+                    facilitar o compartilhamento de informações sobre incidentes de cibersegurança em tempo real,
+                    ajudando todos a se manterem um passo à frente das ameaças.
+                    <br><br>
+                    Acreditamos que a união faz a força, especialmente quando se trata de proteger nossas informações
+                    online. Com nosso banco de dados acessível e robusto, podemos fortalecer as defesas de todos e
+                    proteger nossos ativos mais valiosos. Junte-se a nós e faça parte de uma comunidade que cresce e se
+                    fortalece a cada nova contribuição. Juntos, podemos garantir um ambiente digital mais
+                    seguro para todos.
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="section-form" id="incidents">
+        <div class="main">
+            <article class="left-side alt">
+                <img class="img-main" src="/public/assets/img/cyber-attack-animate.svg" alt="">
+                <h4 class="title-left-side">Registre seu incidente no formulario, nos ajudando a coletar informações para que não aconteçam futuros incidentes como esse</h4>
+            </article>
+            <article class="other-side">
+                <div class="form" id="form">
+                    <form method="POST">
+                        <input type="text" name="name" placeholder="Seu nome:" required>
+                        <input type="email" name="email" placeholder="Seu e-mail:" required>
+                        <input type="text" name="departament" placeholder="Departamento" required>
+                        <input type="text" name="departament" placeholder="Tipo de incidente" required>
+            
+                        <textarea cols="30" rows="10" name="mensagem" placeholder="Descreva o incidente" required></textarea>
+                        <div class="send"><input type="submit" value="ENVIAR"></div>
+                    </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>
