@@ -38,8 +38,11 @@
     .other-side .btn-title{
         font-size: 18px;
     }
-    .header{
-        flex-direction: column;
+    .header ul{
+       display: none;
+    }
+    .header .fa-solid{
+        display: flex;
     }
 
     .text-about{
