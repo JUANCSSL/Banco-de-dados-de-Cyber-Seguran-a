@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="/src/styles/media.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
     <title>CyberShield DB</title>
 </head>
 
@@ -67,19 +68,20 @@
             <article class="other-side">
                 <div class="form" id="form">
                     <form method="POST">
-                        <input type="text" name="name" placeholder="Seu nome:" required>
-                        <input type="email" name="email" placeholder="Seu e-mail:" required>
-                        <input type="text" name="departament" placeholder="Departamento" required>
-                        <input type="text" name="departament" placeholder="Tipo de incidente" required>
+                        <input type="text"  id="name" placeholder="Seu nome:" required>
+                        <input type="email" id="email" placeholder="Seu e-mail:" required>
+                        <input type="text" id="departament" placeholder="Departamento" required>
+                        <input type="text" id="departamentt" placeholder="Tipo de incidente" required>
             
-                        <textarea cols="30" rows="10" name="mensagem" placeholder="Descreva o incidente" required></textarea>
-                        <div class="send"><input type="submit" value="ENVIAR"></div>
+                        <textarea cols="30" rows="10" id="mensagem" placeholder="Descreva o incidente" required></textarea>
+                        <div class="send"><input type="submit" id="send" value="ENVIAR"></div>
                     </form>
                     </div>
                 </div>
             </article>
         </div>
     </section>
+    <script src="/public/app.js"></script>
 </body>
 
 </html>
