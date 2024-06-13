@@ -13,6 +13,18 @@
 </head>
 
 <body>
+    <div class="menu-mobile" id="menuMobile">
+        <div class="btn-close-field">
+            <i class="fa-solid fa-xmark btn-close" onclick="closeMenu()"></i>
+        </div>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#incidents">Incidentes</a></li>
+        </ul>
+        <p class="copyright-text">©️Created By Squad 2</p>
+    </div>
+    <div class="overlay-menu" id="overlayMenu" onclick="closeMenu()"></div>
     <section class="main-section" id="home">
         <header class="header">
             <div class="logo">
@@ -24,8 +36,8 @@
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#incidents">Incidentes</a></li>
             </ul>
+            <i class="fa-solid fa-bars icon-bars" onclick="openMenu()"></i>
         </header>
-
         <main class="main">
             <article class="left-side">
                 <img class="img-main" src="/public/assets/img/hacker-animate (1).svg" alt="">
@@ -82,6 +94,7 @@
         </div>
     </section>
     <script src="/public/app.js"></script>
+    <script src="/src/js/main.js"></script>
 </body>
 
 </html>
