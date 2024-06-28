@@ -1,7 +1,7 @@
 
 ## Bem-vindo ao Projeto Cybershieldb
 
-![Cybershieldb](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+![Cybershieldb](https://media.giphy.com/media/l1J9u3TZfpmeDLkDq/giphy.gif)
 
 # Cybershield Database 
 
