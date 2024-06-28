@@ -21,6 +21,7 @@ O banco de dados `Cybershieldb` contém as seguintes tabelas:
 - `Reduction_actions`: Ações tomadas para reduzir incidentes, incluindo referências aos departamentos e incidentes.
 
   #
+![BR Modelo do Banco de Dados Cybershieldb](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/main/Br%20modelo%20Cybershieldb.pdf)
 
 
 ### Tabelas e Consultas
