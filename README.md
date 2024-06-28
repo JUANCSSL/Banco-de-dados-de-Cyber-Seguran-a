@@ -161,3 +161,14 @@ SELECT * FROM Incident_comments WHERE user_id = 1;
 SELECT * FROM Reduction_actions;
 SELECT * FROM Reduction_actions WHERE incident_id = 1;
 SELECT * FROM Reduction_actions WHERE department_id = 1;
+
+'''
+##Links para as tabelas e graficos
+[Tabela Incidentes](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/juan/Tabelas%20e%20graficos.pdf)
+[Tabela Tipos de incidentes](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Debora/Debora/Tabelas%20e%20graficos%20Debora%20(1).pdf)
+[Tabela Comentario de incidentes](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/thiago/Thiago/Diagrama.png)(https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/thiago/Thiago/Tabela.png)
+[Tabela Usuarios](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Natalia/Graficos%20Table%20Users%20(1).pdf)
+[Tabela Departamentos](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Ligya/Ligya/Tabelas%20e%20gr%C3%A1ficos_%20Ligya%20.pdf)
+[Tabela Reduçoes de acoes](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Isaias/Isaias/Graficos%20isaias.png)(https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Isaias/Isaias/Tabela%20isaias%20Dbdiagram.pdf)(https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Isaias/Isaias/Br%20modelo%20isaias.pdf)
+
+
