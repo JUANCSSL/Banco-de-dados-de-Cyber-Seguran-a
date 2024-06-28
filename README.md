@@ -131,3 +131,33 @@ INSERT INTO Reduction_actions (department_id, incident_id, action_date, action_t
 (3, 3, NOW(), 'Controles de acesso reforçados', 'Alto'),
 (4, 4, NOW(), 'Proteção contra DDoS implementada', 'Médio'),
 (5, 5, NOW(), 'Processos de backup aprimorados', 'Alto');
+
+-- Consultas para Departments
+SELECT * FROM Departments;
+SELECT * FROM Departments WHERE number_of_employees > 20;
+SELECT * FROM Departments WHERE token = 'IT';
+
+-- Consultas para Users
+SELECT * FROM Users;
+SELECT * FROM Users WHERE department_id = 1;
+SELECT * FROM Users WHERE circumstance = 'Ativo';
+
+-- Consultas para Incident_types
+SELECT * FROM Incident_types;
+SELECT * FROM Incident_types WHERE incident_type_priority = 'Crítico';
+SELECT * FROM Incident_types WHERE incident_type_status = 'Ativo';
+
+-- Consultas para Incidents
+SELECT * FROM Incidents;
+SELECT * FROM Incidents WHERE date_reported > '2024-01-01';
+SELECT * FROM Incidents WHERE severity = 'Alto';
+
+-- Consultas para Incident_comments
+SELECT * FROM Incident_comments;
+SELECT * FROM Incident_comments WHERE incident_id = 1;
+SELECT * FROM Incident_comments WHERE user_id = 1;
+
+-- Consultas para Reduction_actions
+SELECT * FROM Reduction_actions;
+SELECT * FROM Reduction_actions WHERE incident_id = 1;
+SELECT * FROM Reduction_actions WHERE department_id = 1;
