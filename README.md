@@ -1,4 +1,4 @@
-# Cybershield Database
+# Cybershield Database 
 
 ## Introdução
 A cibersegurança é crucial na era digital para proteger dados pessoais e empresariais, prevenir ataques cibernéticos, garantir a continuidade dos negócios e cumprir regulamentações. Além disso, ela aumenta a confiança dos clientes e parceiros, protege infraestruturas críticas e acompanha a evolução das ameaças cibernéticas. Medidas como firewalls, antivírus, criptografia, autenticação de dois fatores, backups regulares e educação dos usuários são essenciais para mitigar riscos e proteger informações sensíveis.
@@ -87,3 +87,47 @@ CREATE TABLE Reduction_actions (
   FOREIGN KEY (department_id) REFERENCES Departments(department_id),
   FOREIGN KEY (incident_id) REFERENCES Incidents(incidents_id)
 );
+
+Inserção de Dados
+
+INSERT INTO Departments (token, manager, number_of_employees, commentary) VALUES 
+('IT', 'Isaias', '25', 'Departamento de Tecnologia da Informação'),
+('HR', 'Natália', '15', 'Departamento de Recursos Humanos'),
+('FIN', 'Debora', '20', 'Departamento Financeiro'),
+('OPS', 'Thiago', '30', 'Departamento de Operações'),
+('SEC', 'Juan', '10', 'Departamento de Segurança');
+
+INSERT INTO Users (department_id, username, passcode, email, job_title, circumstance, phone_number) VALUES 
+(1, 'Zaza', 'password123', 'zaza@example.com', 'Gerenciamento de TI', 'Ativo', '(21) 9989-9876'),
+(2, 'Nat', 'password123', 'NAth@example.com', 'Gerenciamento de RH', 'Ativo', '(21) 9999-5686'),
+(3, 'Debinha', 'password123', 'Debinha@example.com', 'Gerente Financeiro', 'Ativo', '(21) 9959-5480'),
+(4, 'TH', 'password123', 'THwn@example.com', 'Gerente das operações', 'Ativo', '(21) 9329-5796'),
+(5, 'Erro J', 'password123', 'ErroJte@example.com', 'Gerente da segurança', 'Ativo', '(21) 9864-5623');
+
+INSERT INTO Incident_types (incident_type_name, incident_type_description, incident_type_category, incident_type_priority, incident_type_creation_date, incident_type_update_date, incident_type_status) VALUES 
+('Phishing', 'Tentativa de e-mail de phishing', 'Segurança de e-mail', 'Alto', NOW(), NOW(), 'Ativo'),
+('Malware', 'Malware detectado no dispositivo', 'Segurança de endpoint', 'Crítico', NOW(), NOW(), 'Ativo'),
+('Violação de dados', 'Acesso não autorizado a dados', 'Segurança de dados', 'Crítico', NOW(), NOW(), 'Ativo'),
+('Ataque DDoS', 'Negação de serviço distribuída', 'Segurança de rede', 'Alto', NOW(), NOW(), 'Ativo'),
+('Ransomware', 'Ataque de ransomware', 'Segurança de endpoint', 'Crítico', NOW(), NOW(), 'Ativo');
+
+INSERT INTO Incidents (user_id, incident_type_id, descriptionn, severity, date_reported, damage_to_device, what_damage) VALUES 
+(1, 1, 'E-mail de phishing recebido e relatado', 'Médio', NOW(), 'Sistema de e-mail', 'Nenhum'),
+(2, 2, 'Malware detectado no dispositivo do gerente de RH', 'Alta', NOW(), 'Estação de trabalho', 'Sistema comprometido'),
+(3, 3, 'Violação de dados detectada no departamento financeiro', 'Crítico', NOW(), 'Database Server', 'Dados exfiltrados'),
+(4, 4, 'Ataque DDoS no site da empresa', 'Alto', NOW(), 'Web Server', 'Website down'),
+(5, 5, 'Ransomware arquivo de usuário criptografado', 'Crítico', NOW(), 'Local de trabalho', 'Arquivos criptografados');
+
+INSERT INTO Incident_comments (incident_id, user_id, commentary, make, improvement) VALUES 
+(1, 1, 'Investigando a origem do e-mail de phishing', NOW(), NOW()),
+(2, 2, 'Verificação de malware no dispositivo', NOW(), NOW()),
+(3, 3, 'Notificar as partes afetadas sobre violação de dados', NOW(), NOW()),
+(4, 4, 'Mitigação de ataques DDoS', NOW(), NOW()),
+(5, 5, 'Restauração de arquivos a partir do backup', NOW(), NOW());
+
+INSERT INTO Reduction_actions (department_id, incident_id, action_date, action_taken, effectiveness) VALUES 
+(1, 1, NOW(), 'Treinamento de phishing para a equipe', 'Alto'),
+(2, 2, NOW(), 'Software anti-malware instalado', 'Médio'),
+(3, 3, NOW(), 'Controles de acesso reforçados', 'Alto'),
+(4, 4, NOW(), 'Proteção contra DDoS implementada', 'Médio'),
+(5, 5, NOW(), 'Processos de backup aprimorados', 'Alto');
