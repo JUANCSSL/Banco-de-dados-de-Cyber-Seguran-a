@@ -1,3 +1,8 @@
+
+## Bem-vindo ao Projeto Cybershieldb
+
+![Cybershieldb](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+
 # Cybershield Database 
 
 ## Introdução
@@ -13,6 +18,9 @@ O banco de dados `Cybershieldb` contém as seguintes tabelas:
 - `Incidents`: Incidentes relatados, incluindo referências ao tipo de incidente e ao usuário.
 - `Incident_comments`: Comentários sobre os incidentes.
 - `Reduction_actions`: Ações tomadas para reduzir incidentes, incluindo referências aos departamentos e incidentes.
+
+  #
+
 
 ### Tabelas e Consultas
 
@@ -162,34 +170,4 @@ SELECT * FROM Reduction_actions;
 SELECT * FROM Reduction_actions WHERE incident_id = 1;
 SELECT * FROM Reduction_actions WHERE department_id = 1;
 
-## RECURSOS ADICIONAIS
-
-### LINKS PARA AS TABELAS E GRÁFICOS
-
-- **TABELA INCIDENTES**  
-  [Tabela Incidentes](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/juan/Tabelas%20e%20graficos.pdf)
-
-- **TABELA TIPOS DE INCIDENTES**  
-  [Tabela Tipos de incidentes](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Debora/Debora/Tabelas%20e%20graficos%20Debora%20(1).pdf)
-
-- **TABELA COMENTARIO DE INCIDENTES**  
-  [Tabela Comentario de incidentes](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/thiago/Thiago/Diagrama.png)
-
-- **TABELA COMENTARIO DE INCIDENTES (TABELA)**  
-  [Tabela Comentario de incidentes (Tabela)](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/thiago/Thiago/Tabela.png)
-
-- **TABELA USUARIOS**  
-  [Tabela Usuarios](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Natalia/Graficos%20Table%20Users%20(1).pdf)
-
-- **TABELA DEPARTAMENTOS**  
-  [Tabela Departamentos](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Ligya/Ligya/Tabelas%20e%20gr%C3%A1ficos_%20Ligya%20.pdf)
-
-- **TABELA REDUÇÕES DE AÇÕES**  
-  [Tabela Reduções de ações](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Isaias/Isaias/Graficos%20isaias.png)
-
-- **TABELA REDUÇÕES DE AÇÕES (TABELA)**  
-  [Tabela Reduções de ações (Tabela)](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Isaias/Isaias/Tabela%20isaias%20Dbdiagram.pdf)
-
-- **TABELA REDUÇÕES DE AÇÕES (MODELO)**  
-  [Tabela Reduções de ações (Modelo)](https://github.com/JUANCSSL/Banco-de-dados-da-cyber-seguran-a/blob/Isaias/Isaias/Br%20modelo%20isaias.pdf)
 
